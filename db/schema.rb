@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180705214030) do
+ActiveRecord::Schema.define(version: 20180705220548) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(version: 20180705214030) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "company_addresses", force: :cascade do |t|
+    t.bigint "company_id"
+    t.bigint "address_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["address_id"], name: "index_company_addresses_on_address_id"
+    t.index ["company_id"], name: "index_company_addresses_on_company_id"
+  end
+
   create_table "company_people", force: :cascade do |t|
     t.bigint "company_id"
     t.bigint "person_id"
@@ -50,4 +59,17 @@ ActiveRecord::Schema.define(version: 20180705214030) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "person_addresses", force: :cascade do |t|
+    t.bigint "person_id"
+    t.bigint "address_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["address_id"], name: "index_person_addresses_on_address_id"
+    t.index ["person_id"], name: "index_person_addresses_on_person_id"
+  end
+
+  add_foreign_key "company_addresses", "addresses"
+  add_foreign_key "company_addresses", "companies"
+  add_foreign_key "person_addresses", "addresses"
+  add_foreign_key "person_addresses", "people"
 end
