@@ -9,4 +9,9 @@ describe Address, type: :model do
        .in_array(['England', 'Wales', 'Scotland', 'Northern Ireland', 'Great Britain', 'United Kingdom', 'Not Specified'])
     end
   end
+
+  context 'relationships' do
+    it { should have_many :people }
+    it { should have_many :companies }
+  end
 end

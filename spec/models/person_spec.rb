@@ -10,5 +10,3 @@ describe Person, type: :model do
     it { should have_many :companies }
   end
 end
-# Create an address book that can record two types of entities -
-# The address book can record addresses for people and organizations
