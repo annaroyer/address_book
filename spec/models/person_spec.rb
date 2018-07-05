@@ -5,6 +5,10 @@ describe Person, type: :model do
     it { should validate_presence_of :first_name }
     it { should validate_presence_of :last_name }
   end
+
+  context 'relationships' do
+    it { should have_many :companies }
+  end
 end
 # Create an address book that can record two types of entities -
 # and companies (get company name, company number).
