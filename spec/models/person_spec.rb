@@ -11,6 +11,4 @@ describe Person, type: :model do
   end
 end
 # Create an address book that can record two types of entities -
-# and companies (get company name, company number).
-# the address book can relate people to companies.
 # The address book can record addresses for people and organizations
