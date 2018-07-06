@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.companieshouse.gov.uk/search/companies?q=bankbond
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic aWx0TTNrTFZyNElZM0U3a01xR3R1bVAxM0syQUZvMDdaMWpQV3MxLTo=
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Jul 2018 21:04:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1850'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - X-RateLimit-Query, origin, content-type, content-length, user-agent, host,
+        accept, authorization
+      Access-Control-Expose-Headers:
+      - Location,www-authenticate,cache-control,pragma,content-type,expires,last-modified
+      - X-RateLimit-Window, X-RateLimit-Limit, X-RateLimit-Remain, X-RateLimit-Reset,
+        Location, www-authenticate, cache-control, pragma, content-type, expires,
+        last-modified
+      Access-Control-Max-Age:
+      - '3600'
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '600'
+      X-Ratelimit-Remain:
+      - '599'
+      X-Ratelimit-Reset:
+      - '1530911363'
+      X-Ratelimit-Window:
+      - 5m
+      Server:
+      - CompaniesHouse
+    body:
+      encoding: UTF-8
+      string: '{"start_index":0,"page_number":1,"kind":"search#companies","items":[{"company_status":"active","links":{"self":"/company/05275061"},"snippet":"","matches":{"title":[1,8],"snippet":[]},"description_identifier":["incorporated-on"],"description":"05275061
+        - Incorporated on  1 November 2004","kind":"searchresults#company","address":{"locality":"Barnstaple","premises":"Unit
+        2","address_line_2":"Howard Avenue","postal_code":"EX32 8QA","region":"Devon"},"address_snippet":"Unit
+        2 Howard Avenue, Barnstaple, Devon, EX32 8QA","date_of_creation":"2004-11-01","company_type":"ltd","title":"BANKBOND
+        LIMITED","company_number":"05275061"},{"company_number":"05031852","company_type":"ltd","title":"JANI-JACK
+        LIMITED","address_snippet":"Myrtle Yard, Curry Rivel, Langport, Somerset,
+        TA10 0PP","address":{"address_line_1":"Curry Rivel","locality":"Langport","premises":"Myrtle
+        Yard","region":"Somerset","postal_code":"TA10 0PP"},"date_of_creation":"2004-02-02","description":"05031852
+        - Incorporated on  2 February 2004","kind":"searchresults#company","matches":{"snippet":[1,8]},"description_identifier":["incorporated-on"],"snippet":"BANKBOND
+        ","company_status":"active","links":{"self":"/company/05031852"}},{"description":"05210642
+        - Incorporated on 19 August 2004","kind":"searchresults#company","snippet":"BANKBOND
+        ","company_status":"active","links":{"self":"/company/05210642"},"description_identifier":["incorporated-on"],"matches":{"snippet":[1,8]},"title":"SWARLAND
+        GOLF CLUB LIMITED","company_type":"ltd","company_number":"05210642","date_of_creation":"2004-08-19","address":{"postal_code":"YO15
+        1DS","region":"East Yorkshire","premises":"Marton Hall Church Lane","locality":"Bridlington","address_line_1":"Sewerby"},"address_snippet":"Marton
+        Hall Church Lane, Sewerby, Bridlington, East Yorkshire, YO15 1DS"}],"total_results":3,"items_per_page":20}'
+    http_version: 
+  recorded_at: Fri, 06 Jul 2018 21:04:23 GMT
+recorded_with: VCR 4.0.0
