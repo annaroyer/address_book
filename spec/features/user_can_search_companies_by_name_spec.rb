@@ -11,6 +11,8 @@ describe 'As a user' do
       expect(current_path).to eq('/search/companies')
       expect(page).to have_field(:q)
       expect(page).to have_link 'BANKBOND LIMITED'
+      expect(page).to have_link 'JANI-JACK LIMITED'
+      expect(page).to have_link 'SWARLAND GOLF CLUB LIMITED'
     end
   end
 end
