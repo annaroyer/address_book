@@ -1,0 +1,100 @@
+{
+    "items": [
+        {
+            "description": "05275061 - Incorporated on  1 November 2004",
+            "snippet": "",
+            "company_type": "ltd",
+            "company_status": "active",
+            "links": {
+                "self": "/company/05275061"
+            },
+            "date_of_creation": "2004-11-01",
+            "address_snippet": "Unit 2 Howard Avenue, Barnstaple, Devon, EX32 8QA",
+            "title": "BANKBOND LIMITED",
+            "description_identifier": [
+                "incorporated-on"
+            ],
+            "matches": {
+                "snippet": [],
+                "title": [
+                    1,
+                    8
+                ]
+            },
+            "kind": "searchresults#company",
+            "company_number": "05275061",
+            "address": {
+                "locality": "Barnstaple",
+                "premises": "Unit 2",
+                "address_line_2": "Howard Avenue",
+                "postal_code": "EX32 8QA",
+                "region": "Devon"
+            }
+        },
+        {
+            "snippet": "BANKBOND ",
+            "description": "05031852 - Incorporated on  2 February 2004",
+            "company_type": "ltd",
+            "company_status": "active",
+            "links": {
+                "self": "/company/05031852"
+            },
+            "address_snippet": "Myrtle Yard, Curry Rivel, Langport, Somerset, TA10 0PP",
+            "date_of_creation": "2004-02-02",
+            "title": "JANI-JACK LIMITED",
+            "description_identifier": [
+                "incorporated-on"
+            ],
+            "matches": {
+                "snippet": [
+                    1,
+                    8
+                ]
+            },
+            "kind": "searchresults#company",
+            "company_number": "05031852",
+            "address": {
+                "locality": "Langport",
+                "region": "Somerset",
+                "address_line_1": "Curry Rivel",
+                "postal_code": "TA10 0PP",
+                "premises": "Myrtle Yard"
+            }
+        },
+        {
+            "kind": "searchresults#company",
+            "company_number": "05210642",
+            "address": {
+                "premises": "Marton Hall Church Lane",
+                "postal_code": "YO15 1DS",
+                "region": "East Yorkshire",
+                "address_line_1": "Sewerby",
+                "locality": "Bridlington"
+            },
+            "matches": {
+                "snippet": [
+                    1,
+                    8
+                ]
+            },
+            "description_identifier": [
+                "incorporated-on"
+            ],
+            "title": "SWARLAND GOLF CLUB LIMITED",
+            "date_of_creation": "2004-08-19",
+            "address_snippet": "Marton Hall Church Lane, Sewerby, Bridlington, East Yorkshire, YO15 1DS",
+            "links": {
+                "self": "/company/05210642"
+            },
+            "company_status": "active",
+            "company_type": "ltd",
+            "description": "05210642 - Incorporated on 19 August 2004",
+            "snippet": "BANKBOND "
+        }
+    ],
+    "kind": "search#companies",
+    "items_per_page": 20,
+    "start_index": 0,
+    "page_number": 1,
+    "total_results": 3
+}
