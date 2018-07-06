@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <%= form_tag('search/companies', method: 'get') do %>
+      <%= label_tag(:q, "Search Companies by Name") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag('Search') %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
