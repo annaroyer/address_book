@@ -1,7 +1,7 @@
-<ul>
+<table>
   <% @companies.each do |company| %>
-  <li>
+  <tr>
     <%= link_to company.name, root_path %>
-  </li>
+  </tr>
   <% end %>
-</ul>
+</table>
