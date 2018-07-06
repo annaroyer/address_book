@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   namespace :search do
     resources :companies, only: [:index]
   end
+
+  resources :companies, only: [:show]
 end
