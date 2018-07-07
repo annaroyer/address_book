@@ -1,6 +1,6 @@
 class Search::CompaniesController < ApplicationController
   def index
-    @companies = CompaniesHouseService.search_companies(search_params)
+    @companies = Company.search_all(search_params)
   end
 
   private
