@@ -1,0 +1,60 @@
+{
+    "last_full_members_list_date": "2015-11-01",
+    "date_of_creation": "2004-11-01",
+    "company_name": "BANKBOND LIMITED",
+    "type": "ltd",
+    "jurisdiction": "england-wales",
+    "company_number": "05275061",
+    "accounts": {
+        "next_made_up_to": "2018-05-31",
+        "overdue": false,
+        "last_accounts": {
+            "made_up_to": "2017-05-31",
+            "period_end_on": "2017-05-31",
+            "period_start_on": "2016-06-01"
+        },
+        "accounting_reference_date": {
+            "month": "05",
+            "day": "31"
+        },
+        "next_due": "2019-02-28",
+        "next_accounts": {
+            "period_end_on": "2018-05-31",
+            "overdue": false,
+            "due_on": "2019-02-28",
+            "period_start_on": "2017-06-01"
+        }
+    },
+    "has_been_liquidated": false,
+    "undeliverable_registered_office_address": false,
+    "sic_codes": [
+        "47599"
+    ],
+    "registered_office_address": {
+        "postal_code": "EX32 8QA",
+        "address_line_2": "Howard Avenue",
+        "address_line_1": "Unit 2",
+        "locality": "Barnstaple",
+        "region": "Devon"
+    },
+    "status": "active",
+    "has_insolvency_history": false,
+    "etag": "c60f8d9de5c4664ca3a6607caeacd26f6a31640f",
+    "company_status": "active",
+    "has_charges": true,
+    "confirmation_statement": {
+        "next_due": "2018-11-15",
+        "last_made_up_to": "2017-11-01",
+        "next_made_up_to": "2018-11-01",
+        "overdue": false
+    },
+    "links": {
+        "self": "/company/05275061",
+        "filing_history": "/company/05275061/filing-history",
+        "officers": "/company/05275061/officers",
+        "charges": "/company/05275061/charges",
+        "persons_with_significant_control": "/company/05275061/persons-with-significant-control"
+    },
+    "registered_office_is_in_dispute": false,
+    "can_file": true
+}

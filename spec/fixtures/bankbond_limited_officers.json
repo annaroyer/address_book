@@ -1,0 +1,196 @@
+{
+    "items_per_page": 35,
+    "items": [
+        {
+            "name": "GARSTANG, Magnus",
+            "officer_role": "secretary",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/DOmqDNFVG7LbiFDtNQE4Kx_g_QQ/appointments"
+                }
+            },
+            "appointed_on": "2006-06-20",
+            "address": {
+                "address_line_1": "25 St Efrides Road",
+                "region": "Devon",
+                "locality": "Torquay",
+                "postal_code": "TQ2 5SG"
+            }
+        },
+        {
+            "appointed_on": "2004-11-01",
+            "occupation": "Office Manager",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/z49d90zt10PyTfu6e7gqAxO88jo/appointments"
+                }
+            },
+            "name": "WARD, Victoria Emma",
+            "officer_role": "director",
+            "country_of_residence": "England",
+            "nationality": "British",
+            "address": {
+                "region": "Devon",
+                "postal_code": "EX32 8QA",
+                "locality": "Barnstaple",
+                "address_line_1": "Unit 2",
+                "address_line_2": "Howard Avenue"
+            },
+            "date_of_birth": {
+                "month": 5,
+                "year": 1974
+            }
+        },
+        {
+            "appointed_on": "2005-08-16",
+            "address": {
+                "address_line_1": "Fouracres",
+                "postal_code": "EX3 0PN",
+                "address_line_2": "Exton Lane Exton",
+                "locality": "Exeter",
+                "region": "Devon"
+            },
+            "resigned_on": "2006-06-20",
+            "name": "WARD, Victoria Emma",
+            "officer_role": "secretary",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/QrFCPa8fDHYaAFkN3EmBK6gPZBE/appointments"
+                }
+            }
+        },
+        {
+            "links": {
+                "officer": {
+                    "appointments": "/officers/obY2br2vgOSDmY8f4XecJHF_L7w/appointments"
+                }
+            },
+            "name": "WILLETTS, Sheila Joy",
+            "officer_role": "secretary",
+            "resigned_on": "2005-08-16",
+            "appointed_on": "2004-11-01",
+            "address": {
+                "locality": "Exeter",
+                "address_line_1": "Milestone",
+                "address_line_2": "Old Rydon Lane",
+                "postal_code": "EX2 7JZ",
+                "region": "Devon"
+            }
+        },
+        {
+            "resigned_on": "2004-11-04",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/fwDCpBl85F54DmEmvcpFDLK_yUc/appointments"
+                }
+            },
+            "officer_role": "corporate-nominee-secretary",
+            "name": "SECRETARIAL APPOINTMENTS LIMITED",
+            "address": {
+                "postal_code": "CF10 2DX",
+                "address_line_1": "16 Churchill Way",
+                "locality": "Cardiff"
+            },
+            "appointed_on": "2004-11-01"
+        },
+        {
+            "officer_role": "director",
+            "name": "WARD, Mark William",
+            "occupation": "Director",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/HMiTfBQWE14Tw0xVO1V3Ng4x1w4/appointments"
+                }
+            },
+            "nationality": "British",
+            "resigned_on": "2006-06-20",
+            "country_of_residence": "United Kingdom",
+            "appointed_on": "2004-11-01",
+            "address": {
+                "region": "Devon",
+                "postal_code": "EX3 0PN",
+                "locality": "Exton",
+                "address_line_1": "Four Acres",
+                "address_line_2": "Exton Lane"
+            },
+            "date_of_birth": {
+                "year": 1967,
+                "month": 7
+            }
+        },
+        {
+            "address": {
+                "postal_code": "EX2 7JZ",
+                "locality": "Exeter",
+                "address_line_2": "Old Rydon Lane",
+                "address_line_1": "Milestone",
+                "region": "Devon"
+            },
+            "date_of_birth": {
+                "year": 1948,
+                "month": 2
+            },
+            "name": "WILLETTS, Graham David",
+            "officer_role": "director",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/z3SxcREAKhgPV6zm0vu4POdk-SI/appointments"
+                }
+            },
+            "occupation": "Director",
+            "resigned_on": "2005-08-16",
+            "nationality": "British",
+            "appointed_on": "2004-11-01"
+        },
+        {
+            "date_of_birth": {
+                "month": 8,
+                "year": 1948
+            },
+            "address": {
+                "region": "Devon",
+                "postal_code": "EX2 7JZ",
+                "locality": "Exeter",
+                "address_line_2": "Old Rydon Lane",
+                "address_line_1": "Milestone"
+            },
+            "resigned_on": "2005-08-16",
+            "nationality": "British",
+            "officer_role": "director",
+            "name": "WILLETTS, Sheila Joy",
+            "occupation": "Office Manager",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/obY2br2vgOSDmY8f4XecJHF_L7w/appointments"
+                }
+            },
+            "appointed_on": "2004-11-01"
+        },
+        {
+            "resigned_on": "2004-11-04",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/zlFriInDEeobOsZ2xcrESHMjccE/appointments"
+                }
+            },
+            "name": "CORPORATE APPOINTMENTS LIMITED",
+            "officer_role": "corporate-nominee-director",
+            "address": {
+                "address_line_1": "16 Churchill Way",
+                "postal_code": "CF10 2DX",
+                "locality": "Cardiff"
+            },
+            "appointed_on": "2004-11-01"
+        }
+    ],
+    "links": {
+        "self": "/company/05275061/officers"
+    },
+    "etag": "458cf31b11f54246cb2299f93c01c698c667fa5e",
+    "inactive_count": 0,
+    "resigned_count": 7,
+    "active_count": 2,
+    "start_index": 0,
+    "total_results": 9,
+    "kind": "officer-list"
+}
