@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 06 Jul 2018 21:33:03 GMT
+      - Sat, 07 Jul 2018 03:22:10 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -47,31 +47,29 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600'
       X-Ratelimit-Remain:
-      - '599'
+      - '598'
       X-Ratelimit-Reset:
-      - '1530913083'
+      - '1530934000'
       X-Ratelimit-Window:
       - 5m
       Server:
       - CompaniesHouse
     body:
       encoding: UTF-8
-      string: '{"total_results":3,"page_number":1,"start_index":0,"kind":"search#companies","items_per_page":20,"items":[{"company_status":"active","description":"05275061
-        - Incorporated on  1 November 2004","address":{"region":"Devon","locality":"Barnstaple","postal_code":"EX32
-        8QA","address_line_2":"Howard Avenue","premises":"Unit 2"},"title":"BANKBOND
-        LIMITED","kind":"searchresults#company","date_of_creation":"2004-11-01","address_snippet":"Unit
-        2 Howard Avenue, Barnstaple, Devon, EX32 8QA","links":{"self":"/company/05275061"},"company_type":"ltd","description_identifier":["incorporated-on"],"matches":{"title":[1,8],"snippet":[]},"snippet":"","company_number":"05275061"},{"matches":{"snippet":[1,8]},"snippet":"BANKBOND
-        ","company_number":"05031852","description_identifier":["incorporated-on"],"company_type":"ltd","address_snippet":"Myrtle
-        Yard, Curry Rivel, Langport, Somerset, TA10 0PP","date_of_creation":"2004-02-02","links":{"self":"/company/05031852"},"description":"05031852
-        - Incorporated on  2 February 2004","company_status":"active","address":{"premises":"Myrtle
-        Yard","region":"Somerset","postal_code":"TA10 0PP","address_line_1":"Curry
-        Rivel","locality":"Langport"},"title":"JANI-JACK LIMITED","kind":"searchresults#company"},{"links":{"self":"/company/05210642"},"date_of_creation":"2004-08-19","address_snippet":"Marton
-        Hall Church Lane, Sewerby, Bridlington, East Yorkshire, YO15 1DS","kind":"searchresults#company","description":"05210642
-        - Incorporated on 19 August 2004","company_status":"active","title":"SWARLAND
-        GOLF CLUB LIMITED","address":{"address_line_1":"Sewerby","postal_code":"YO15
-        1DS","region":"East Yorkshire","locality":"Bridlington","premises":"Marton
-        Hall Church Lane"},"company_number":"05210642","matches":{"snippet":[1,8]},"snippet":"BANKBOND
-        ","description_identifier":["incorporated-on"],"company_type":"ltd"}]}'
+      string: '{"total_results":3,"items_per_page":20,"items":[{"company_number":"05275061","title":"BANKBOND
+        LIMITED","company_type":"ltd","date_of_creation":"2004-11-01","address_snippet":"Unit
+        2 Howard Avenue, Barnstaple, Devon, EX32 8QA","address":{"region":"Devon","postal_code":"EX32
+        8QA","premises":"Unit 2","address_line_2":"Howard Avenue","locality":"Barnstaple"},"kind":"searchresults#company","description":"05275061
+        - Incorporated on  1 November 2004","matches":{"snippet":[],"title":[1,8]},"description_identifier":["incorporated-on"],"company_status":"active","snippet":"","links":{"self":"/company/05275061"}},{"date_of_creation":"2004-02-02","address":{"region":"Somerset","postal_code":"TA10
+        0PP","premises":"Myrtle Yard","address_line_1":"Curry Rivel","locality":"Langport"},"address_snippet":"Myrtle
+        Yard, Curry Rivel, Langport, Somerset, TA10 0PP","title":"JANI-JACK LIMITED","company_type":"ltd","company_number":"05031852","snippet":"BANKBOND
+        ","company_status":"active","links":{"self":"/company/05031852"},"description_identifier":["incorporated-on"],"matches":{"snippet":[1,8]},"kind":"searchresults#company","description":"05031852
+        - Incorporated on  2 February 2004"},{"date_of_creation":"2004-08-19","address_snippet":"Marton
+        Hall Church Lane, Sewerby, Bridlington, East Yorkshire, YO15 1DS","address":{"locality":"Bridlington","address_line_1":"Sewerby","premises":"Marton
+        Hall Church Lane","postal_code":"YO15 1DS","region":"East Yorkshire"},"company_number":"05210642","title":"SWARLAND
+        GOLF CLUB LIMITED","company_type":"ltd","matches":{"snippet":[1,8]},"description_identifier":["incorporated-on"],"company_status":"active","snippet":"BANKBOND
+        ","links":{"self":"/company/05210642"},"kind":"searchresults#company","description":"05210642
+        - Incorporated on 19 August 2004"}],"page_number":1,"kind":"search#companies","start_index":0}'
     http_version: 
-  recorded_at: Fri, 06 Jul 2018 21:33:03 GMT
+  recorded_at: Sat, 07 Jul 2018 03:22:10 GMT
 recorded_with: VCR 4.0.0
