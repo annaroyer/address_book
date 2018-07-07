@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     resources :companies, only: [:index]
   end
 
-  resources :companies, only: [:show]
+  resources :companies, only: [:show], param: :number
 end
