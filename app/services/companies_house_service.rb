@@ -1,15 +1,21 @@
 class CompaniesHouseService
+  def initialize(path="")
+    @host = "https://api.companieshouse.gov.uk"
+    @api_key = ENV['companies_house_key']
+    @path = path
+  end
 
-  def self.get_url(endpoint, params={})
-    response = conn.get(endpoint, params)
+  def get_data(endpoint, params={})
+    response = conn.get("#{path}/#{endpoint}", params)
     JSON.parse(response.body, symbolize_names: true)
   end
 
   private
+    attr_reader :host, :api_key, :path
 
-    def self.conn
-      Faraday.new("https://api.companieshouse.gov.uk") do |request|
-        request.basic_auth(ENV['companies_house_key'], '')
+    def conn
+      Faraday.new(host) do |request|
+        request.basic_auth(api_key, '')
         request.adapter Faraday.default_adapter
       end
     end

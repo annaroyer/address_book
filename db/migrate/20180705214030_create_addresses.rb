@@ -3,7 +3,7 @@ class CreateAddresses < ActiveRecord::Migration[5.1]
     create_table :addresses do |t|
       t.string :address_line_1
       t.string :address_line_2
-      t.string :country
+      t.string :country, default: 'Not Specified'
       t.string :locality
       t.string :po_box
       t.string :postal_code

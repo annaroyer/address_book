@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180705220548) do
+ActiveRecord::Schema.define(version: 20180708001927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20180705220548) do
   create_table "addresses", force: :cascade do |t|
     t.string "address_line_1"
     t.string "address_line_2"
-    t.string "country"
+    t.string "country", default: "Not Specified"
     t.string "locality"
     t.string "po_box"
     t.string "postal_code"
@@ -30,8 +30,11 @@ ActiveRecord::Schema.define(version: 20180705220548) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
+    t.string "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "address_id"
+    t.index ["address_id"], name: "index_companies_on_address_id"
   end
 
   create_table "company_addresses", force: :cascade do |t|
@@ -68,6 +71,7 @@ ActiveRecord::Schema.define(version: 20180705220548) do
     t.index ["person_id"], name: "index_person_addresses_on_person_id"
   end
 
+  add_foreign_key "companies", "addresses"
   add_foreign_key "company_addresses", "addresses"
   add_foreign_key "company_addresses", "companies"
   add_foreign_key "person_addresses", "addresses"

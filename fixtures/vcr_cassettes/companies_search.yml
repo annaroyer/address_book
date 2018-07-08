@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 07 Jul 2018 03:22:10 GMT
+      - Sun, 08 Jul 2018 04:14:43 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -47,29 +47,29 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600'
       X-Ratelimit-Remain:
-      - '598'
+      - '599'
       X-Ratelimit-Reset:
-      - '1530934000'
+      - '1531023583'
       X-Ratelimit-Window:
       - 5m
       Server:
       - CompaniesHouse
     body:
       encoding: UTF-8
-      string: '{"total_results":3,"items_per_page":20,"items":[{"company_number":"05275061","title":"BANKBOND
-        LIMITED","company_type":"ltd","date_of_creation":"2004-11-01","address_snippet":"Unit
-        2 Howard Avenue, Barnstaple, Devon, EX32 8QA","address":{"region":"Devon","postal_code":"EX32
-        8QA","premises":"Unit 2","address_line_2":"Howard Avenue","locality":"Barnstaple"},"kind":"searchresults#company","description":"05275061
-        - Incorporated on  1 November 2004","matches":{"snippet":[],"title":[1,8]},"description_identifier":["incorporated-on"],"company_status":"active","snippet":"","links":{"self":"/company/05275061"}},{"date_of_creation":"2004-02-02","address":{"region":"Somerset","postal_code":"TA10
-        0PP","premises":"Myrtle Yard","address_line_1":"Curry Rivel","locality":"Langport"},"address_snippet":"Myrtle
-        Yard, Curry Rivel, Langport, Somerset, TA10 0PP","title":"JANI-JACK LIMITED","company_type":"ltd","company_number":"05031852","snippet":"BANKBOND
-        ","company_status":"active","links":{"self":"/company/05031852"},"description_identifier":["incorporated-on"],"matches":{"snippet":[1,8]},"kind":"searchresults#company","description":"05031852
-        - Incorporated on  2 February 2004"},{"date_of_creation":"2004-08-19","address_snippet":"Marton
-        Hall Church Lane, Sewerby, Bridlington, East Yorkshire, YO15 1DS","address":{"locality":"Bridlington","address_line_1":"Sewerby","premises":"Marton
-        Hall Church Lane","postal_code":"YO15 1DS","region":"East Yorkshire"},"company_number":"05210642","title":"SWARLAND
-        GOLF CLUB LIMITED","company_type":"ltd","matches":{"snippet":[1,8]},"description_identifier":["incorporated-on"],"company_status":"active","snippet":"BANKBOND
-        ","links":{"self":"/company/05210642"},"kind":"searchresults#company","description":"05210642
-        - Incorporated on 19 August 2004"}],"page_number":1,"kind":"search#companies","start_index":0}'
+      string: '{"page_number":1,"items":[{"matches":{"snippet":[],"title":[1,8]},"description_identifier":["incorporated-on"],"kind":"searchresults#company","links":{"self":"/company/05275061"},"date_of_creation":"2004-11-01","company_number":"05275061","company_type":"ltd","snippet":"","company_status":"active","address":{"address_line_2":"Howard
+        Avenue","premises":"Unit 2","region":"Devon","locality":"Barnstaple","postal_code":"EX32
+        8QA"},"description":"05275061 - Incorporated on  1 November 2004","title":"BANKBOND
+        LIMITED","address_snippet":"Unit 2 Howard Avenue, Barnstaple, Devon, EX32
+        8QA"},{"company_status":"active","snippet":"BANKBOND ","title":"JANI-JACK
+        LIMITED","address_snippet":"Myrtle Yard, Curry Rivel, Langport, Somerset,
+        TA10 0PP","address":{"premises":"Myrtle Yard","region":"Somerset","postal_code":"TA10
+        0PP","locality":"Langport","address_line_1":"Curry Rivel"},"description":"05031852
+        - Incorporated on  2 February 2004","links":{"self":"/company/05031852"},"kind":"searchresults#company","matches":{"snippet":[1,8]},"description_identifier":["incorporated-on"],"company_number":"05031852","company_type":"ltd","date_of_creation":"2004-02-02"},{"company_type":"ltd","company_number":"05210642","date_of_creation":"2004-08-19","links":{"self":"/company/05210642"},"kind":"searchresults#company","matches":{"snippet":[1,8]},"description_identifier":["incorporated-on"],"title":"SWARLAND
+        GOLF CLUB LIMITED","address_snippet":"Marton Hall Church Lane, Sewerby, Bridlington,
+        East Yorkshire, YO15 1DS","address":{"region":"East Yorkshire","premises":"Marton
+        Hall Church Lane","locality":"Bridlington","address_line_1":"Sewerby","postal_code":"YO15
+        1DS"},"description":"05210642 - Incorporated on 19 August 2004","company_status":"active","snippet":"BANKBOND
+        "}],"total_results":3,"start_index":0,"items_per_page":20,"kind":"search#companies"}'
     http_version: 
-  recorded_at: Sat, 07 Jul 2018 03:22:10 GMT
+  recorded_at: Sun, 08 Jul 2018 04:14:43 GMT
 recorded_with: VCR 4.0.0
