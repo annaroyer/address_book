@@ -1,11 +1,10 @@
 <h1><%= @company.name %></h1>
 <h2>Company Number: <%= @company.number %></h2>
 
-  <h4><%= @company.address.address_line_1 %> <%= @company.address.address_line_2 %></h4>
-  <h4><%= @company.address.locality %>, <%= @company.address.region %></h4>
-  <h4><%= @company.address.postal_code %></h4>
+<%= render @company.address %>
 
 <h2>Officers</h2>
 <% @company.officers.each do |officer| %>
-  <h4><%= officer.first_name %> <%= officer.last_name %></h4>
+  <h4><%= officer.role %>: <%= officer.first_name %> <%= officer.last_name %></h4>
+  <%= render officer.address %>
 <% end %>
