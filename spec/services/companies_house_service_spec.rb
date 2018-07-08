@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 describe CompaniesHouseService do
   context 'instance methods' do

@@ -3,9 +3,7 @@ require 'rails_helper'
 describe 'As a user' do
   context 'After I have searched for companies by name' do
     before(:each) do
-      bankbond_companies = File.open('./spec/fixtures/bankbond_companies.json')
-      stub_request(:get, 'https://api.companieshouse.gov.uk/search/companies?q=bankbond')
-        .to_return(status: 200, body: bankbond_companies, headers: {})
+      stub_search
 
       visit '/'
 
@@ -14,12 +12,7 @@ describe 'As a user' do
     end
 
     scenario 'I can click on a company name link and see information about the company' do
-      bankbond_limited = File.open('./spec/fixtures/bankbond_limited.json')
-      bankbond_limited_officers = File.open('./spec/fixtures/bankbond_limited_officers.json')
-      stub_request(:get, 'https://api.companieshouse.gov.uk/company/05275061')
-        .to_return(status: 200, body: bankbond_limited, headers: {})
-      stub_request(:get, 'https://api.companieshouse.gov.uk/company/05275061/officers')
-        .to_return(status: 200, body: bankbond_limited_officers, headers: {})
+      stub_get_company_info
 
       click_on 'BANKBOND LIMITED'
 

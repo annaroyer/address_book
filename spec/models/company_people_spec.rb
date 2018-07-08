@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 describe CompanyPerson, type: :model do
   context 'relationships' do

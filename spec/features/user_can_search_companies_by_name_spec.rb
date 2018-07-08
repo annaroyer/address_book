@@ -3,9 +3,7 @@ require 'rails_helper'
 describe 'As a user' do
   context 'when I visit /' do
     scenario 'I can search companies by name' do
-      bankbond_companies = File.open('./spec/fixtures/bankbond_companies.json')
-      stub_request(:get, 'https://api.companieshouse.gov.uk/search/companies?q=bankbond')
-        .to_return(status: 200, body: bankbond_companies, headers: {})
+      stub_search
 
       visit '/'
 
