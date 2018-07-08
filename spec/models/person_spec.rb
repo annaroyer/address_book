@@ -8,5 +8,6 @@ describe Person, type: :model do
 
   context 'relationships' do
     it { should have_many :companies }
+    it { should belong_to :address }
   end
 end

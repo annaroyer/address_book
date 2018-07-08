@@ -7,5 +7,6 @@ describe Company, type: :model do
 
   context 'relationships' do
     it { should have_many :people }
+    it { should belong_to :address }
   end
 end
