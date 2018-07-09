@@ -9,11 +9,20 @@
   </head>
 
   <body>
-    <%= form_tag('search/companies', method: 'get') do %>
+    <nav class="search">
+      <%= form_tag('search/companies', method: 'get') do %>
       <%= label_tag(:q, "Search Companies by Name") %>
       <%= text_field_tag(:q) %>
       <%= submit_tag('Search') %>
+      <% end %>
+    </nav>
+
+    <% flash.each do |type, message| %>
+      <%= content_tag :div, message.html_safe, class: type %>
     <% end %>
-    <%= yield %>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

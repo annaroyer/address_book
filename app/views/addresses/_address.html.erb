@@ -1,3 +1,5 @@
-<h4><%= address.address_line_1 %> <%= address.address_line_2 %></h4>
-<h4><%= address.locality %>, <%= address.region %></h4>
-<h4><%= address.postal_code %></h4>
+<figure class="address">
+  <%= address.address_line_1 %> <%= address.address_line_2 %><br>
+  <%= address.locality %>, <%= address.region %><br>
+  <%= address.postal_code %>
+</figure>

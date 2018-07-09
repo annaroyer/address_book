@@ -4,9 +4,15 @@
 <%= render @company.address %>
 
 <h2>Officers</h2>
-<% @company.people.each do |officer| %>
-  <h4><%= officer.first_name %> <%= officer.last_name %></h4>
-  <%= render officer.address %>
-<% end %>
+<section class="officers">
+  <% @company.people.each do |officer| %>
+    <figure class="officer">
+      <h4><%= officer.first_name %> <%= officer.last_name %></h4>
+      <%= render officer.address %>
+    </figure>
+  <% end %>
+</section>
 
-<%= button_to "Import Record to Address Book", companies_path, params: {number: @company.number} %>
+<%= button_to "Import Record to Address Book", companies_path,
+    params: {number: @company.number}, class: 'import' 
+%>
