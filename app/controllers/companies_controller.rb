@@ -16,7 +16,7 @@ class CompaniesController < ApplicationController
   private
 
     def set_company
-      @company = Company.from_service(companies_house_data)
+      @company = Company.find_by(number: params[:number]) || Company.from_service(companies_house_data)
     end
 
     def companies_house_data

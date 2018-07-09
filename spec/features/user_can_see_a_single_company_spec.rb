@@ -19,11 +19,11 @@ describe 'As a user' do
       expect(current_path).to eq('/companies/05275061')
       expect(page).to have_content('BANKBOND LIMITED')
       expect(page).to have_content('05275061')
-      expect(page).to have_content("Unit 2 Howard Avenue\nBarnstaple, Devon\nEX32 8QA")
+      expect(page).to have_content("Unit 2 Howard Avenue Barnstaple, Devon EX32 8QA")
       expect(page).to have_content('Magnus Garstang')
-      expect(page).to have_content("25 St Efrides Road\nTorquay, Devon\nTQ2 5SG")
+      expect(page).to have_content("25 St Efrides Road Torquay, Devon TQ2 5SG")
       expect(page).to have_content('Victoria Emma Ward')
-      expect(page).to have_content("25 St Efrides Road\nTorquay, Devon\nTQ2 5SG")
+      expect(page).to have_content("25 St Efrides Road Torquay, Devon TQ2 5SG")
     end
   end
 end

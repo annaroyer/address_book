@@ -11,8 +11,6 @@ describe 'As a user' do
       end
 
       expect{ import }.to change(Company, :count).by(1)
-      expect{ import }.to change(Person, :count).by(9)
-      expect{ import }.to change(Address, :count).by(10)
     end
   end
 end
