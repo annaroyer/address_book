@@ -6,7 +6,7 @@ class CompaniesHouseService
   end
 
   def get_data(endpoint, params={})
-    response = conn.get("#{path}/#{endpoint}", params)
+    response = conn.get("#{endpoint}", params)
     JSON.parse(response.body, symbolize_names: true)
   end
 
@@ -14,7 +14,7 @@ class CompaniesHouseService
     attr_reader :host, :api_key, :path
 
     def conn
-      Faraday.new(host) do |request|
+      Faraday.new("#{host}/#{path}/") do |request|
         request.basic_auth(api_key, '')
         request.adapter Faraday.default_adapter
       end
