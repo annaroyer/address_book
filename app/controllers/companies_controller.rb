@@ -8,7 +8,7 @@ class CompaniesController < ApplicationController
     if @company.save
       flash.now[:notice] = "Company Record added to Address Book"
     else
-      flash.now[:notice] = "Import Was Unsuccessful"
+      flash.now[:alert] = "Import Was Unsuccessful"
     end
     render :show
   end

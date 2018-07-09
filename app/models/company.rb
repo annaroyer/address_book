@@ -6,7 +6,7 @@ class Company < ApplicationRecord
   accepts_nested_attributes_for :address, :people
 
   def self.from_service(companies_house_data)
-    new(
+    find_or_initialize_by(
       name: companies_house_data[:company_name],
       number: companies_house_data[:company_number],
       address_attributes: companies_house_data[:registered_office_address],

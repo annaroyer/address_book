@@ -13,6 +13,8 @@
   <% end %>
 </section>
 
-<%= button_to "Import Record to Address Book", companies_path,
-    params: {number: @company.number}, class: 'import' 
-%>
+<% if @company.new_record? %>
+  <%= button_to "Import Record to Address Book", companies_path,
+      params: {number: @company.number}, class: 'import'
+  %>
+<% end %>
