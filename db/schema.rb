@@ -55,6 +55,4 @@ ActiveRecord::Schema.define(version: 20180708060143) do
     t.index ["address_id"], name: "index_people_on_address_id"
   end
 
-  add_foreign_key "companies", "addresses"
-  add_foreign_key "people", "addresses"
 end
