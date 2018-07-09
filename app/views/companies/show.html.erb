@@ -4,7 +4,9 @@
 <%= render @company.address %>
 
 <h2>Officers</h2>
-<% @company.officers.each do |officer| %>
-  <h4><%= officer.role %>: <%= officer.first_name %> <%= officer.last_name %></h4>
+<% @company.people.each do |officer| %>
+  <h4><%= officer.first_name %> <%= officer.last_name %></h4>
   <%= render officer.address %>
 <% end %>
+
+<%= button_to "Import Record to Address Book", companies_path, params: {number: @company.number} %>
